@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		718E3BE82B8CE26F005B045E /* TeeRexStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3BE72B8CE26F005B045E /* TeeRexStoreApp.swift */; };
+		718E3BEC2B8CE272005B045E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718E3BEB2B8CE272005B045E /* Assets.xcassets */; };
+		718E3BEF2B8CE272005B045E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718E3BEE2B8CE272005B045E /* Preview Assets.xcassets */; };
+		718E3BF92B8CE272005B045E /* TeeRexStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3BF82B8CE272005B045E /* TeeRexStoreTests.swift */; };
+		718E3C032B8CE272005B045E /* TeeRexStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3C022B8CE272005B045E /* TeeRexStoreUITests.swift */; };
+		718E3C052B8CE272005B045E /* TeeRexStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3C042B8CE272005B045E /* TeeRexStoreUITestsLaunchTests.swift */; };
+		718E3C162B8CFA93005B045E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3C152B8CFA93005B045E /* NetworkManager.swift */; };
+		718E3C192B8CFEEB005B045E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3C182B8CFEEB005B045E /* APIError.swift */; };
+		718E3C1B2B8D0427005B045E /* RestServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3C1A2B8D0427005B045E /* RestServices.swift */; };
+		718E3C1D2B8D0512005B045E /* CatalogueDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3C1C2B8D0512005B045E /* CatalogueDetail.swift */; };
+		718E3C1F2B8D9042005B045E /* TeeRexRestServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3C1E2B8D9042005B045E /* TeeRexRestServices.swift */; };
+		718E3C212B8D9125005B045E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3C202B8D9125005B045E /* HomeView.swift */; };
+		718E3C232B8D9136005B045E /* HomeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3C222B8D9136005B045E /* HomeViewViewModel.swift */; };
+		718E3C252B8DA3F4005B045E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3C242B8DA3F4005B045E /* Endpoint.swift */; };
+		718E3C292B8E27F2005B045E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E3C282B8E27F2005B045E /* CardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		718E3BF52B8CE272005B045E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 718E3BDC2B8CE26F005B045E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 718E3BE32B8CE26F005B045E;
+			remoteInfo = TeeRexStore;
+		};
+		718E3BFF2B8CE272005B045E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 718E3BDC2B8CE26F005B045E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 718E3BE32B8CE26F005B045E;
+			remoteInfo = TeeRexStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		718E3BE42B8CE26F005B045E /* TeeRexStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeeRexStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		718E3BE72B8CE26F005B045E /* TeeRexStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeRexStoreApp.swift; sourceTree = "<group>"; };
+		718E3BEB2B8CE272005B045E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		718E3BEE2B8CE272005B045E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		718E3BF42B8CE272005B045E /* TeeRexStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeeRexStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		718E3BF82B8CE272005B045E /* TeeRexStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeRexStoreTests.swift; sourceTree = "<group>"; };
+		718E3BFE2B8CE272005B045E /* TeeRexStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeeRexStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		718E3C022B8CE272005B045E /* TeeRexStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeRexStoreUITests.swift; sourceTree = "<group>"; };
+		718E3C042B8CE272005B045E /* TeeRexStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeRexStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		718E3C152B8CFA93005B045E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		718E3C182B8CFEEB005B045E /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		718E3C1A2B8D0427005B045E /* RestServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServices.swift; sourceTree = "<group>"; };
+		718E3C1C2B8D0512005B045E /* CatalogueDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueDetail.swift; sourceTree = "<group>"; };
+		718E3C1E2B8D9042005B045E /* TeeRexRestServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeRexRestServices.swift; sourceTree = "<group>"; };
+		718E3C202B8D9125005B045E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		718E3C222B8D9136005B045E /* HomeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModel.swift; sourceTree = "<group>"; };
+		718E3C242B8DA3F4005B045E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		718E3C282B8E27F2005B045E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		718E3BE12B8CE26F005B045E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E3BF12B8CE272005B045E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E3BFB2B8CE272005B045E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		718E3BDB2B8CE26F005B045E = {
+			isa = PBXGroup;
+			children = (
+				718E3BE62B8CE26F005B045E /* TeeRexStore */,
+				718E3BF72B8CE272005B045E /* TeeRexStoreTests */,
+				718E3C012B8CE272005B045E /* TeeRexStoreUITests */,
+				718E3BE52B8CE26F005B045E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		718E3BE52B8CE26F005B045E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				718E3BE42B8CE26F005B045E /* TeeRexStore.app */,
+				718E3BF42B8CE272005B045E /* TeeRexStoreTests.xctest */,
+				718E3BFE2B8CE272005B045E /* TeeRexStoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		718E3BE62B8CE26F005B045E /* TeeRexStore */ = {
+			isa = PBXGroup;
+			children = (
+				718E3C172B8CFED5005B045E /* Other */,
+				718E3C142B8CF9EE005B045E /* Network */,
+				718E3C132B8CF98E005B045E /* ViewModel */,
+				718E3C122B8CF986005B045E /* View */,
+				718E3C112B8CF972005B045E /* Model */,
+				718E3BE72B8CE26F005B045E /* TeeRexStoreApp.swift */,
+				718E3BEB2B8CE272005B045E /* Assets.xcassets */,
+				718E3BED2B8CE272005B045E /* Preview Content */,
+			);
+			path = TeeRexStore;
+			sourceTree = "<group>";
+		};
+		718E3BED2B8CE272005B045E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				718E3BEE2B8CE272005B045E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		718E3BF72B8CE272005B045E /* TeeRexStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				718E3BF82B8CE272005B045E /* TeeRexStoreTests.swift */,
+			);
+			path = TeeRexStoreTests;
+			sourceTree = "<group>";
+		};
+		718E3C012B8CE272005B045E /* TeeRexStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				718E3C022B8CE272005B045E /* TeeRexStoreUITests.swift */,
+				718E3C042B8CE272005B045E /* TeeRexStoreUITestsLaunchTests.swift */,
+			);
+			path = TeeRexStoreUITests;
+			sourceTree = "<group>";
+		};
+		718E3C112B8CF972005B045E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				718E3C1C2B8D0512005B045E /* CatalogueDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		718E3C122B8CF986005B045E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				718E3C202B8D9125005B045E /* HomeView.swift */,
+				718E3C282B8E27F2005B045E /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		718E3C132B8CF98E005B045E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				718E3C222B8D9136005B045E /* HomeViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		718E3C142B8CF9EE005B045E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				718E3C152B8CFA93005B045E /* NetworkManager.swift */,
+				718E3C182B8CFEEB005B045E /* APIError.swift */,
+				718E3C1A2B8D0427005B045E /* RestServices.swift */,
+				718E3C1E2B8D9042005B045E /* TeeRexRestServices.swift */,
+				718E3C242B8DA3F4005B045E /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		718E3C172B8CFED5005B045E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		718E3BE32B8CE26F005B045E /* TeeRexStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718E3C082B8CE272005B045E /* Build configuration list for PBXNativeTarget "TeeRexStore" */;
+			buildPhases = (
+				718E3BE02B8CE26F005B045E /* Sources */,
+				718E3BE12B8CE26F005B045E /* Frameworks */,
+				718E3BE22B8CE26F005B045E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeeRexStore;
+			productName = TeeRexStore;
+			productReference = 718E3BE42B8CE26F005B045E /* TeeRexStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		718E3BF32B8CE272005B045E /* TeeRexStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718E3C0B2B8CE272005B045E /* Build configuration list for PBXNativeTarget "TeeRexStoreTests" */;
+			buildPhases = (
+				718E3BF02B8CE272005B045E /* Sources */,
+				718E3BF12B8CE272005B045E /* Frameworks */,
+				718E3BF22B8CE272005B045E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				718E3BF62B8CE272005B045E /* PBXTargetDependency */,
+			);
+			name = TeeRexStoreTests;
+			productName = TeeRexStoreTests;
+			productReference = 718E3BF42B8CE272005B045E /* TeeRexStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		718E3BFD2B8CE272005B045E /* TeeRexStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718E3C0E2B8CE272005B045E /* Build configuration list for PBXNativeTarget "TeeRexStoreUITests" */;
+			buildPhases = (
+				718E3BFA2B8CE272005B045E /* Sources */,
+				718E3BFB2B8CE272005B045E /* Frameworks */,
+				718E3BFC2B8CE272005B045E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				718E3C002B8CE272005B045E /* PBXTargetDependency */,
+			);
+			name = TeeRexStoreUITests;
+			productName = TeeRexStoreUITests;
+			productReference = 718E3BFE2B8CE272005B045E /* TeeRexStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		718E3BDC2B8CE26F005B045E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					718E3BE32B8CE26F005B045E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					718E3BF32B8CE272005B045E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 718E3BE32B8CE26F005B045E;
+					};
+					718E3BFD2B8CE272005B045E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 718E3BE32B8CE26F005B045E;
+					};
+				};
+			};
+			buildConfigurationList = 718E3BDF2B8CE26F005B045E /* Build configuration list for PBXProject "TeeRexStore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 718E3BDB2B8CE26F005B045E;
+			productRefGroup = 718E3BE52B8CE26F005B045E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				718E3BE32B8CE26F005B045E /* TeeRexStore */,
+				718E3BF32B8CE272005B045E /* TeeRexStoreTests */,
+				718E3BFD2B8CE272005B045E /* TeeRexStoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		718E3BE22B8CE26F005B045E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718E3BEF2B8CE272005B045E /* Preview Assets.xcassets in Resources */,
+				718E3BEC2B8CE272005B045E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E3BF22B8CE272005B045E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E3BFC2B8CE272005B045E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		718E3BE02B8CE26F005B045E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718E3C162B8CFA93005B045E /* NetworkManager.swift in Sources */,
+				718E3C1F2B8D9042005B045E /* TeeRexRestServices.swift in Sources */,
+				718E3C192B8CFEEB005B045E /* APIError.swift in Sources */,
+				718E3C1D2B8D0512005B045E /* CatalogueDetail.swift in Sources */,
+				718E3C292B8E27F2005B045E /* CardView.swift in Sources */,
+				718E3C252B8DA3F4005B045E /* Endpoint.swift in Sources */,
+				718E3C212B8D9125005B045E /* HomeView.swift in Sources */,
+				718E3C1B2B8D0427005B045E /* RestServices.swift in Sources */,
+				718E3C232B8D9136005B045E /* HomeViewViewModel.swift in Sources */,
+				718E3BE82B8CE26F005B045E /* TeeRexStoreApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E3BF02B8CE272005B045E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718E3BF92B8CE272005B045E /* TeeRexStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718E3BFA2B8CE272005B045E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718E3C032B8CE272005B045E /* TeeRexStoreUITests.swift in Sources */,
+				718E3C052B8CE272005B045E /* TeeRexStoreUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		718E3BF62B8CE272005B045E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 718E3BE32B8CE26F005B045E /* TeeRexStore */;
+			targetProxy = 718E3BF52B8CE272005B045E /* PBXContainerItemProxy */;
+		};
+		718E3C002B8CE272005B045E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 718E3BE32B8CE26F005B045E /* TeeRexStore */;
+			targetProxy = 718E3BFF2B8CE272005B045E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		718E3C062B8CE272005B045E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		718E3C072B8CE272005B045E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		718E3C092B8CE272005B045E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TeeRexStore/Preview Content\"";
+				DEVELOPMENT_TEAM = T38A32PU85;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThinkAnts.TeeRexStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		718E3C0A2B8CE272005B045E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TeeRexStore/Preview Content\"";
+				DEVELOPMENT_TEAM = T38A32PU85;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThinkAnts.TeeRexStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		718E3C0C2B8CE272005B045E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T38A32PU85;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThinkAnts.TeeRexStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeeRexStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TeeRexStore";
+			};
+			name = Debug;
+		};
+		718E3C0D2B8CE272005B045E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T38A32PU85;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThinkAnts.TeeRexStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeeRexStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TeeRexStore";
+			};
+			name = Release;
+		};
+		718E3C0F2B8CE272005B045E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T38A32PU85;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThinkAnts.TeeRexStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeeRexStore;
+			};
+			name = Debug;
+		};
+		718E3C102B8CE272005B045E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T38A32PU85;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ThinkAnts.TeeRexStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeeRexStore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		718E3BDF2B8CE26F005B045E /* Build configuration list for PBXProject "TeeRexStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718E3C062B8CE272005B045E /* Debug */,
+				718E3C072B8CE272005B045E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718E3C082B8CE272005B045E /* Build configuration list for PBXNativeTarget "TeeRexStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718E3C092B8CE272005B045E /* Debug */,
+				718E3C0A2B8CE272005B045E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718E3C0B2B8CE272005B045E /* Build configuration list for PBXNativeTarget "TeeRexStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718E3C0C2B8CE272005B045E /* Debug */,
+				718E3C0D2B8CE272005B045E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718E3C0E2B8CE272005B045E /* Build configuration list for PBXNativeTarget "TeeRexStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				718E3C0F2B8CE272005B045E /* Debug */,
+				718E3C102B8CE272005B045E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 718E3BDC2B8CE26F005B045E /* Project object */;
+}
